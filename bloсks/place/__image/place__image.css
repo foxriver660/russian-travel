@@ -1,7 +1,6 @@
 .place__image {
   min-width: 460px;
   width: 100%;
-
   grid-column: 1;
   grid-row: 2/4;
   justify-self: center;
@@ -20,7 +19,7 @@
   .place__image {
     min-width: 320px;
     padding-bottom: 32px;
-    width: 100vw;
+    width: calc(100vw - 28px);
     grid-row: 3/5;
   }
 }

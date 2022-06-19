@@ -25,21 +25,24 @@
 
 @media screen and (max-width: 1279px) {
   .cover {
-    min-width: 100vw;
+    min-width: calc(100vw - 30px);
     margin-left: -48px;
     margin-right: -48px;
   }
 }
 @media screen and (max-width: 1023px) {
   .cover {
-    margin-left: -24px;
-    margin-right: -24px;
-    margin-bottom: 88px;
+    min-width: calc(100vw - 30px);
+    margin-left: -20px;
+    margin-right: -20px;
+       margin-bottom: 88px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .cover {
+    margin-left: -12px;
+    margin-right: -12px;
     margin-bottom: 64px;
   }
 }
