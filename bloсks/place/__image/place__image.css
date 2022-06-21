@@ -19,7 +19,7 @@
   .place__image {
     min-width: 320px;
     padding-bottom: 32px;
-    width: calc(100vw - 28px);
+    
     grid-row: 3/5;
   }
 }

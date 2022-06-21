@@ -4,50 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Russian-travel</title>
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <header class="header">
-      <svg
+      <img
         class="header__logo"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 176 52"
-      >
-        <path
-          fill="#fff"
-          d="m8 23 2-1 5-6 1-1 1 7h-2l-1-3-1 4h5l4 2 2-2 3 4 2-6 2 2 1-2 2-1 4-3v-1h3l1 2-2 4 5-3v-1h2l2 2 2-3v-1l3-3 2-2h2l3-8 4-3 1 2-2 2 1 2h1l2 7v5l2 4 2 5-5-3-2-8h-1v5l-3 6-1 8h2l1-1 2 3 2 7v5h-2l-1-7-2 2-3-1-2-2-3 1v5l-2 1-4 2h-4l-2-1h-2l1 1-2 1h-2l-3 1-5-2-2-5-1 1-2-2v-1l-6-1-1 4-3-2-2-3H8v5H6l-2 5v-1l-4-9 4-2v-4l-1-5 2-2-1-2 3-3h1Zm57 11 3 6 2-1-2-2-3-4v1ZM24 22v-2l3-2 3-2h-3l-3 2-1 1v3h1Zm66 19h5v-5h2c4 0 7-3 7-6 0-4-3-6-7-6h-7v17Zm5-9v-5h1c2 0 3 1 3 3 0 1-1 2-3 2h-1Zm17 9c4 0 6-2 6-7 0-4-2-6-6-6-5 0-7 2-7 6 0 5 2 7 7 7Zm0-3c-2 0-2-1-2-4 0-2 0-3 2-3 1 0 2 1 2 3 0 3-1 4-2 4Zm15 3c3 0 6-2 6-5h-5l-1 2c-2 0-2-1-2-4 0-2 0-3 2-3l1 2h5c0-3-3-5-6-5-5 0-7 2-7 6 0 5 2 7 7 7Zm14 0c4 0 6-2 6-5h-4l-2 2c-1 0-2-1-2-4 0-2 1-3 2-3l2 2h4c0-3-2-5-6-5s-7 2-7 6c0 5 3 7 7 7Zm13-6v-7h-5v13h5l3-7v7h5V28h-5l-3 7Zm18 6h4V28h-6c-4 0-6 2-6 4l2 4-2 5h4l2-4h2v4Zm0-7h-2l-2-1 2-2h2v3Z"
-        />
-      </svg>
-
-      <div class="header__lang-links">
-        <a
-          class="header__lang-link header__lang-link_active active-link"
-          href="#"
-          >Ru</a
-        >
-        <a class="header__lang-link active-link" href="#">En</a>
-      </div>
+        src="./image/header-logo.svg"
+        alt="Схематичная карта России"
+      />
+      <ul class="header__lang-links">
+        <li>
+          <a
+            class="header__lang-link header__lang-link_active active-link"
+            href="#"
+            >Ru</a
+          >
+        </li>
+        <li><a class="header__lang-link active-link" href="#">En</a></li>
+      </ul>
     </header>
     <main class="content">
       <section class="lead">
         <h1 class="lead__title">Путешествия по России</h1>
-        <h2 class="lead__subtitle">
+        <p class="lead__subtitle">
           Настоящая страна не в выпусках новостей, а здесь.
-        </h2>
+        </p>
+
         <img
           class="lead__image"
           src="./image/lead__polka.jpg"
           alt="Схематичный маршрут из Пскова до Улан-Удэ. На заднем фоне женищна спящая в поезде"
         />
-        <div class="lead__caption">ваша полка — верхняя</div>
+        <p class="lead__caption">ваша полка — верхняя</p>
       </section>
-      -->
+
       <section class="intro">
-        <div class="intro-container">
+        <div class="intro__container">
           <h2 class="intro__title">Чего мы там не видели?</h2>
-          <p class="intro-text">
+          <p class="intro__text">
             По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
             36% планируют провести отпуск в родной стране. Мол, чего мы тут,
             дома, не видели? На самом деле, Россия — это целая вселенная с
@@ -76,12 +72,13 @@
           </ul>
         </div>
       </section>
-      <div class="photo-grid">
+      <section class="photo-grid" aria-label="Блок с фотографиями">
         <img
           class="photo-grid__item"
           src="./image/photo-grid-train.jpg"
           alt="Вид из окна поезда"
         />
+
         <img
           class="photo-grid__item"
           src="./image/photo-grid-atharva-tulsi.jpg"
@@ -137,9 +134,12 @@
           src="./image/photo-grid-ergaki.jpg"
           alt="Сильный туман на поросших мхом скалситых образованиях"
         />
-      </div>
-      <section class="places">
-        <div class="place">
+      </section>
+      <section
+        class="places"
+        aria-label="Блок с фотографиями и описаниями мест"
+      >
+        <article class="place">
           <h2 class="place__title">Куршская коса</h2>
           <img
             src="./image/place-kosa.jpg"
@@ -171,8 +171,8 @@
               прохладного моря.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Кольский</h2>
           <img
             src="./image/place-kolsky.jpg"
@@ -204,8 +204,8 @@
               в Мурманск.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Алтай</h2>
           <img
             src="./image/place-altai.jpg"
@@ -236,8 +236,8 @@
               косули. И знаменитые манулы — тоже обитатели Алтайского края.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Зимний Байкал</h2>
           <img
             src="./image/place-winter-baikal.jpg"
@@ -267,8 +267,8 @@
               «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
             </p>
           </div>
-        </div>
-        <div class="place">
+        </article>
+        <article class="place">
           <h2 class="place__title">Карелия</h2>
           <img
             src="./image/place-karelia.jpg"
@@ -297,20 +297,22 @@
               медвежьими когтями. Чтобы все знали, кто тут хозяин.
             </p>
           </div>
-        </div>
+        </article>
       </section>
       <section class="cover">
-        <a
-          class="cover__background-link"
-          target="_blank"
-          href="https://stampsy.com/na-elektrichkakh-do-baikala"
-        >
-          <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
-          <h3 class="cover__subtitle">
-            По мотивам учебной темы о Транссибе — путешествие от столицы до
-            Байкала на электричках.
-          </h3>
-        </a>
+        <div class="cover__background-overlay">
+          <a
+            class="cover__background-link"
+            target="_blank"
+            href="https://stampsy.com/na-elektrichkakh-do-baikala"
+          >
+            <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
+            <p class="cover__subtitle">
+              По мотивам учебной темы о Транссибе — путешествие от столицы до
+              Байкала на электричках.
+            </p>
+          </a>
+        </div>
       </section>
     </main>
     <footer class="footer">
