@@ -2,6 +2,7 @@
   width: 100%;
   position: relative;
   margin-bottom: 92px;
+  background-color: rgba(42, 44, 47, 0.3);
 }
 .cover:before {
   content: "";
