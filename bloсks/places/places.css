@@ -4,7 +4,7 @@
   align-items: center;
   max-width: 984px;
   width: 100%;
-  margin: 0 auto 92px auto;
+  margin: 0 auto 92px;
   gap: 80px;
 }
 @media screen and (max-width: 1279px) {
@@ -16,12 +16,12 @@
   .places {
     max-width: 720px;
     gap: 73px;
-    margin: 0 auto 90px auto;
+    margin: 0 auto 90px;
   }
 }
 @media screen and (max-width: 767px) {
   .places {
     gap: 50px;
-    margin: 0 auto 66px auto;
+    margin: 0 auto 66px;
   }
 }

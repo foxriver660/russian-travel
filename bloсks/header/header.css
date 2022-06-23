@@ -8,19 +8,17 @@
 @media screen and (max-width: 1279px) {
   .header {
     margin-bottom: 48px;
-    width: 91.1%;
+    width: 90.5%;
   }
 }
 @media screen and (max-width: 1023px) {
   .header {
-    margin-bottom: 41px;
     width: 93.8%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    margin-bottom: 48px;
-    width: 89.7%;
+    width: 89.86%;
   }
 }
