@@ -3,7 +3,7 @@
   
 
   
-Static site. 
+Website. 
 * Implemented adaptation of the web page by breakpoints in accordance with the design layout on the points **(1280px, 1024px, 768px, 320px)**, blocks and images are proportionally compressed in intermediate values.  
 * Implemented during layout - the file structure was built in accordance with the **BEM methodology** using the Nested project's file structure organization scheme.
 * Used Flexbox and Grid to create flexible layouts. 
